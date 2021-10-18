@@ -22,10 +22,8 @@
 # Setup library
 ########################################################################
 include(GrPlatform) #define LIB_SUFFIX
-
 list(APPEND ais_sources
-    freqest_impl.cc
-)
+    )
 
 set(ais_sources "${ais_sources}" PARENT_SCOPE)
 if(NOT ais_sources)
@@ -40,6 +38,8 @@ target_include_directories(gnuradio-ais
     PUBLIC $<INSTALL_INTERFACE:include>
   )
 set_target_properties(gnuradio-ais PROPERTIES DEFINE_SYMBOL "gnuradio_ais_EXPORTS")
+set_target_properties(gnuradio-ais PROPERTIES SOVERSION "${VERSION_MAJOR}")
+set_target_properties(gnuradio-ais PROPERTIES VERSION "${VERSION_MAJOR}.${VERSION_MINOR}")
 
 if(APPLE)
     set_target_properties(gnuradio-ais PROPERTIES
@@ -68,7 +68,6 @@ include(GrTest)
 #include_directories()
 # List all files that contain Boost.UTF unit tests here
 list(APPEND test_ais_sources
-qa_freqest.cc
 )
 # Anything we need to link to for the unit tests go here
 list(APPEND GR_TEST_TARGET_DEPS gnuradio-ais)

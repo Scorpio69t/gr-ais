@@ -8,8 +8,5 @@
 %include "ais_swig_doc.i"
 
 %{
-#include "ais/freqest.h"
 %}
 
-%include "ais/freqest.h"
-GR_SWIG_BLOCK_MAGIC2(ais, freqest);
