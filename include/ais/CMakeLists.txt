@@ -23,5 +23,5 @@
 ########################################################################
 install(FILES
     api.h
-    DESTINATION include/ais
+    freqest.h DESTINATION include/ais
 )

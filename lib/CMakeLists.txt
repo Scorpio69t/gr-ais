@@ -23,7 +23,7 @@
 ########################################################################
 include(GrPlatform) #define LIB_SUFFIX
 list(APPEND ais_sources
-    )
+    freqest_impl.cc )
 
 set(ais_sources "${ais_sources}" PARENT_SCOPE)
 if(NOT ais_sources)
