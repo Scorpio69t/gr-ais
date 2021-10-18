@@ -3,7 +3,7 @@ brief: Short description of gr-ais
 tags: # Tags are arbitrary, but look at CGRAN what other authors are using
   - sdr
 author:
-  - Author Name <authors@email.address>
+  - Author Name <18728163854@163.com>
 copyright_owner:
   - Copyright Owner 1
 license:
