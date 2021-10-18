@@ -18,5 +18,6 @@
 # the Free Software Foundation, Inc., 51 Franklin Street,
 # Boston, MA 02110-1301, USA.
 install(FILES
-    ais_freqest.block.yml DESTINATION share/gnuradio/grc/blocks
+    ais_freqest.block.yml
+    ais_corr_est_cc.block.yml DESTINATION share/gnuradio/grc/blocks
 )

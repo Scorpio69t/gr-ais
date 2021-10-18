@@ -23,5 +23,6 @@
 ########################################################################
 install(FILES
     api.h
-    freqest.h DESTINATION include/ais
+    freqest.h
+    corr_est_cc.h DESTINATION include/ais
 )
