@@ -217,7 +217,7 @@ namespace gr
     freqest::sptr
     freqest::make(float sample_rate, int data_rate, int fftlen)
     {
-      return gnuradio::get_initial_sptr(new freqest_impl(float sample_rate, int data_rate, int fftlen));
+      return gnuradio::get_initial_sptr(new freqest_impl(sample_rate, data_rate, fftlen));
     }
 
     /*
@@ -249,6 +249,12 @@ namespace gr
 
       // Do <+signal processing+>
       // you are responsible for organizing the vector
+      unsigned int fftlen = input_signature()->sizeof_stream_item(0) / sizeof(gr_complex);
+
+      float maxenergy = 0;
+      unsigned int maxpos = 0;
+      float currentenergy;
+
       for (int i = 0; i < noutput_items; i++)
       {
         // for each requested output item
