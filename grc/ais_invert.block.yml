@@ -1,0 +1,15 @@
+id: ais_invert
+label: invert
+category: '[Ais]'
+templates:
+  imports: import ais
+  make: ais.invert()
+inputs:
+- label: in
+  domain: stream
+  dtype: byte
+outputs:
+- label: out
+  domain: stream
+  dtype: byte
+file_format: 1

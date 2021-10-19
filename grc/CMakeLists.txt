@@ -19,5 +19,6 @@
 # Boston, MA 02110-1301, USA.
 install(FILES
     ais_freqest.block.yml
-    ais_corr_est_cc.block.yml DESTINATION share/gnuradio/grc/blocks
+    ais_corr_est_cc.block.yml
+    ais_invert.block.yml DESTINATION share/gnuradio/grc/blocks
 )

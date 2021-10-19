@@ -24,5 +24,6 @@
 install(FILES
     api.h
     freqest.h
-    corr_est_cc.h DESTINATION include/ais
+    corr_est_cc.h
+    invert.h DESTINATION include/ais
 )
