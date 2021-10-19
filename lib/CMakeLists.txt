@@ -25,7 +25,8 @@ include(GrPlatform) #define LIB_SUFFIX
 list(APPEND ais_sources
     freqest_impl.cc
     corr_est_cc_impl.cc
-    invert_impl.cc )
+    invert_impl.cc
+    modulate_vector.cc )
 
 set(ais_sources "${ais_sources}" PARENT_SCOPE)
 if(NOT ais_sources)
@@ -69,8 +70,7 @@ include(GrTest)
 # If your unit tests require special include paths, add them here
 #include_directories()
 # List all files that contain Boost.UTF unit tests here
-list(APPEND test_ais_sources
-)
+
 # Anything we need to link to for the unit tests go here
 list(APPEND GR_TEST_TARGET_DEPS gnuradio-ais)
 

@@ -25,5 +25,6 @@ install(FILES
     api.h
     freqest.h
     corr_est_cc.h
-    invert.h DESTINATION include/ais
+    invert.h
+    modulate_vector.h DESTINATION include/ais
 )
