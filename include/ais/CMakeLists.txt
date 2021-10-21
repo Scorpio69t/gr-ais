@@ -26,5 +26,7 @@ install(FILES
     freqest.h
     corr_est_cc.h
     invert.h
-    modulate_vector.h DESTINATION include/ais
+    modulate_vector.h
+    msk_timing_recovery_cc.h
+    pdu_to_nmea.h DESTINATION include/ais
 )

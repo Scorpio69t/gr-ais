@@ -26,7 +26,9 @@ list(APPEND ais_sources
     freqest_impl.cc
     corr_est_cc_impl.cc
     invert_impl.cc
-    modulate_vector.cc )
+    modulate_vector.cc
+    msk_timing_recovery_cc_impl.cc
+    pdu_to_nmea_impl.cc )
 
 set(ais_sources "${ais_sources}" PARENT_SCOPE)
 if(NOT ais_sources)
