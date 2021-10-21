@@ -18,3 +18,19 @@ gr_supported_version: # Put a comma separated list of supported GR versions here
 A longer, multi-line description of gr-ais.
 You may use some *basic* Markdown here.
 If left empty, it will try to find a README file instead.
+
+```
+mkdir build && cd build
+
+cmake ..
+
+make
+
+sudo make install
+
+sudo ldconfig
+
+cd apps
+
+python3 ais_rx.exe -h
+```
