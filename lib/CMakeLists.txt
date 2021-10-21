@@ -37,7 +37,7 @@ if(NOT ais_sources)
 endif(NOT ais_sources)
 
 add_library(gnuradio-ais SHARED ${ais_sources})
-target_link_libraries(gnuradio-ais gnuradio::gnuradio-runtime)
+target_link_libraries(gnuradio-ais gnuradio::gnuradio-runtime gnuradio::gnuradio-fft gnuradio::gnuradio-filter)
 target_include_directories(gnuradio-ais
     PUBLIC $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/../include>
     PUBLIC $<INSTALL_INTERFACE:include>
